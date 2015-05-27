@@ -1,0 +1,16 @@
+{
+    "contents" : "# Windows image file caches\nThumbs.db\nehthumbs.db\n\n# Folder config file\nDesktop.ini\n\n# Recycle Bin used on file shares\n$RECYCLE.BIN/\n\n# Windows Installer files\n*.cab\n*.msi\n*.msm\n*.msp\n\n# =========================\n# Operating System Files\n# =========================\n\n# OSX\n# =========================\n\n.DS_Store\n.AppleDouble\n.LSOverride\n\n# Icon must end with two \\r\nIcon\n\n\n# Thumbnails\n._*\n\n# Files that might appear on external disk\n.Spotlight-V100\n.Trashes\n\n# Directories potentially created on remote AFP share\n.AppleDB\n.AppleDesktop\nNetwork Trash Folder\nTemporary Items\n.apdisk\n\nYear 3 Quantitative Data Analysis.Rproj\n\nmunge.csv\nrise-analysis.csv\ntest.rmd\ntest.html",
+    "created" : 1432742057800.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2037861381",
+    "id" : "568A2248",
+    "lastKnownWriteTime" : 1432742072,
+    "path" : "Y:/Year 3/Year 3 Quantitative Data Analysis/rise-quant1/.gitignore",
+    "project_path" : ".gitignore",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "text"
+}

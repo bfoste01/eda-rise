@@ -9,4 +9,10 @@ rise[,factors] <- data.frame(apply(rise[factors], 2, as.factor)) # stream-line a
 numeric <- c(4:11, 16, 18:19, 50:232) # direct calls to column number vs. name
 rise[,numeric] <- data.frame(apply(rise[numeric], 2, as.numeric))
 str(rise) # check again and make sure everything looks correct
+# recode missing
+rise[rise=="N/Q"] <- NA 
+# Variable labels
+rise$PEduc <- factor(rise$PEduc, levels = c(1:7), labels = c("No Formal Schooling", "Some Elementary School",
+  "Completed Elementary School", "Some Middle and High School", "Competed High School Diploma or GED",
+  "Some College", "Completed 4-Year Degree or Higher"))
 

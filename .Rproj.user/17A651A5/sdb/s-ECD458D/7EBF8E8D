@@ -1,0 +1,16 @@
+{
+    "contents" : "# Import the raw csv file\n#  Note. The path to the final data will need to change once complete\nrise <- read.csv(\"munge.csv\", header = TRUE, sep = \",\", na.strings = \"NA\")\n",
+    "created" : 1432060268539.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "730131487",
+    "id" : "7EBF8E8D",
+    "lastKnownWriteTime" : 1432740436,
+    "path" : "Y:/Year 3/Year 3 Quantitative Data Analysis/rise-quant1/import.r",
+    "project_path" : "import.r",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

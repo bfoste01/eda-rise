@@ -1,0 +1,16 @@
+{
+    "contents" : "# the following script contains any functions made critical for stream lining the analytic process\n#   Note. This script needs to be run before any other scripts. \ntab2 = function(x, useNA =FALSE) {\n  if(!useNA) if(any(is.na(x))) x = na.omit(x)\n  n = length(x)\n  out = data.frame(x,1) %>%\n    group_by(x) %>%\n    dplyr::summarise(\n      Freq    = length(X1),\n      Percent = Freq/n\n    ) %>%\n    dplyr::arrange(x)\n  ids = as.character(out$x)\n  ids[is.na(ids)] = '<NA>'\n  out = select(out, Freq, Percent)\n  out$cum = cumsum(out$Percent)\n  class(out)=\"data.frame\"\n  out = rbind(out,c(n,1,NA))\n  rownames(out) = c(ids,'')\n  out\n}",
+    "created" : 1432742806316.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "369117916",
+    "id" : "13106E90",
+    "lastKnownWriteTime" : 1432742893,
+    "path" : "Y:/Year 3/Year 3 Quantitative Data Analysis/rise-quant1/functions.r",
+    "project_path" : "functions.r",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

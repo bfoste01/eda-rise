@@ -1,0 +1,16 @@
+{
+    "contents" : "install.packages(\"gdata\")\ninstall.packages(\"dplyr\")\ninstall.packages(\"lme4\")\ninstall.packages(\"ggplot2\")\ninstall.packages(\"sjPlot\")\ninstall.packages(\"pander\")\n",
+    "created" : 1432740691025.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4173655470",
+    "id" : "281F656A",
+    "lastKnownWriteTime" : 1432741961,
+    "path" : "Y:/Year 3/Year 3 Quantitative Data Analysis/rise-quant1/packages.r",
+    "project_path" : "packages.r",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

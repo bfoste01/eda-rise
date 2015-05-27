@@ -1,0 +1,16 @@
+{
+    "contents" : "#-----------------------------------------------------------------------------------------------\n# Setting up the variable types\n#-----------------------------------------------------------------------------------------------\ncolnames(rise) # check variables and see the column number for each variable\nstr(rise) # examine variable types for errors (there ar many)\n# trying to keep code DRY with the 'apply' family of functions\nfactors <- c(2:3, 12, 14:15, 16) # these are references to column numbers\nrise[,factors] <- data.frame(apply(rise[factors], 2, as.factor)) # stream-line and use apply family functions instead of for loops\nnumeric <- c(4:11, 16, 18:19, 50:232) # direct calls to column number vs. name\nrise[,numeric] <- data.frame(apply(rise[numeric], 2, as.numeric))\nstr(rise) # check again and make sure everything looks correct\n# recode missing\nrise[rise==\"N/Q\"] <- NA \n# Variable labels\nrise$PEduc <- factor(rise$PEduc, levels = c(1:7), labels = c(\"No Formal Schooling\", \"Some Elementary School\",\n  \"Completed Elementary School\", \"Some Middle and High School\", \"Competed High School Diploma or GED\",\n  \"Some College\", \"Completed 4-Year Degree or Higher\"))\n\n",
+    "created" : 1432060276807.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3939563656",
+    "id" : "EE77367C",
+    "lastKnownWriteTime" : 1432743639,
+    "path" : "Y:/Year 3/Year 3 Quantitative Data Analysis/rise-quant1/munge.r",
+    "project_path" : "munge.r",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

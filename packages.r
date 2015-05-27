@@ -1,2 +1,6 @@
 install.packages("gdata")
 install.packages("dplyr")
+install.packages("lme4")
+install.packages("ggplot2")
+install.packages("sjPlot")
+install.packages("pander")

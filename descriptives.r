@@ -2,4 +2,13 @@
 #------------------------------------------------------------------------------------
 # Select out subsets of interest
 #------------------------------------------------------------------------------------
-# Demographics
+# Lens
+library(dplyr) # for easy 
+dems <- select(rise, 56:158) # pull out all lens data
+# Lens
+lens <- select(rise, 56:158) # pull out all lens data
+library(psych)
+lens.desc <- describe(lens, na.rm = TRUE)
+library(pander) # package for creating tables in knitr output
+panderOptions('table.split.table', Inf) # option so table does not split
+pander(as.data.frame(lens.desc))

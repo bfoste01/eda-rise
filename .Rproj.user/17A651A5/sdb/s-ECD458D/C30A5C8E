@@ -1,0 +1,16 @@
+{
+    "contents" : "# The following script will execute descriptive statistics on the selected varaibles\n#------------------------------------------------------------------------------------\n# Select out subsets of interest\n#------------------------------------------------------------------------------------\n# Lens\nlibrary(dplyr) # for easy \ndems <- select(rise, 56:158) # pull out all lens data\n# Lens\nlens <- select(rise, 56:158) # pull out all lens data\nlibrary(psych)\nlens.desc <- describe(lens, na.rm = TRUE)\nlibrary(pander) # package for creating tables in knitr output\npanderOptions('table.split.table', Inf) # option so table does not split\npander(as.data.frame(lens.desc))",
+    "created" : 1432740463541.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4096643411",
+    "id" : "C30A5C8E",
+    "lastKnownWriteTime" : 1432743661,
+    "path" : "Y:/Year 3/Year 3 Quantitative Data Analysis/rise-quant1/descriptives.r",
+    "project_path" : "descriptives.r",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

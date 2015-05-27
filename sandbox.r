@@ -13,7 +13,7 @@ factors <- c("CCEmp", "CCEmpHr", "CCHPpl", "CCLang",  "CCLangO", "CCRace", "CCRa
 "AgeFallYPL", "CAgeFallLENS",  "CAgeFallYLENS",  "CAgeSpPL",	"CAgeSpYPL", "CAgeSpLENS",	"CAgeSpYLENS"
 
 
-
+tabdt(rise$PEduc)
 
 
 fnl2 <- iris %>%
