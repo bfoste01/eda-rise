@@ -1,0 +1,17 @@
+{
+    "contents" : "numeric <- c(\"NumAdult\", \"NumChild\", \"SSaysFall\", \"AShowFall\", \"PLTotalFall\", \"SSaysSp\", \"AShowSp\",\n             \"AgeFallYPL\", \"CAgeFallLENS\",  \"CAgeFallYLENS\",  \"CAgeSpPL\",  \"CAgeSpYPL\", \"CAgeSpLENS\",\t\n             \"CAgeSpYLENS\", \"PLTotalSp\", \"LENSFall\", \"LENSSp\", \"LENSdiff\", \"LTLSF_1\", \"LTLSF_2\", \"LTLSF_3\", \"LTLSF_4\", \n             \"LTLSF_5\", \"LTLSF_6\", \"LTLSF_7\", \"LTLSF_8\", \"LTLSF_9\", \"LTLSF_10\", \"LTLSF_11\", \"LTLSF_22\",\t\n             \"LTLSF_23\", \"LTLSF_24\", \"LTLSF_25\", \"LTLSF_26\", \"LTLSF_27\", \"LTLSF_28\",\t\"LTLSF_29\",\t\"LTLSF_30\",\t\n             \"LTLSF_31\", \"LTLSF_12\", \"LTLSF_13\", \"LTLSF_14\", \"LTLSSF_15\", \"LTLSSF_16\", \"LTLSF_17\", \"LTLSF_18\",\t\n             \"LTLSF_19\", \"LTLSF_20\", \"LTLSF_21\", \"LTLSF_32\", \"LTLSF_33\", \"LTLSF_34\",\t\"LTLSF_35\",\t\"LTLSF_36\",\t\n             \"LTLSF_37\", \"LTLSF_38\", \"LTLSF_39\", \"LTLSF_40\", \"LTLSF_41\", \"LTLSF_42\")\nfactors <- c(\"CCEmp\", \"CCEmpHr\", \"CCHPpl\", \"CCLang\",  \"CCLangO\", \"CCRace\", \"CCRaceO\", \n             \"CCReg\", \"CDOB\", \"CGender\", \"ColNum\", \"EBEmp\", \"EBEmp1\", \"EBEng\", \"EBEngProf\", \n             \"EBEthn\", \"EBFam\", \"EBFamO\", \"EBLang\", \"EBLangO\", \"EBO\",  \"EBOIf\", \"EBOProf\", \n             \"EBRace\", \"EBRaceO\", \"EBSp\")\n\"AgeFallYPL\", \"CAgeFallLENS\",  \"CAgeFallYLENS\",  \"CAgeSpPL\",\t\"CAgeSpYPL\", \"CAgeSpLENS\",\t\"CAgeSpYLENS\"\n",
+    "created" : 1432061683574.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3094921597",
+    "id" : "B5FE6630",
+    "lastKnownWriteTime" : 1432061710,
+    "path" : "Y:/Year 3/Year 3 Quantitative Data Analysis/eda-rise/sandbox.r",
+    "project_path" : "sandbox.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

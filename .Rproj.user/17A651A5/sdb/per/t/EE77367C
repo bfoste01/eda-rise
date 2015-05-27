@@ -1,0 +1,16 @@
+{
+    "contents" : "#-----------------------------------------------------------------------------------------------\n# Setting up the variable types\n#-----------------------------------------------------------------------------------------------\ncolnames(rise) # check variables\nstr(rise) # examine variable types for errors (there ar many)\n# trying to keep code DRY\nfactors <- c(2:3, 12, 14:15, 16)\nrise[,factors] <- data.frame(apply(rise[factors], 2, as.factor)) # stream-line and use apply family functions instead of for loops\nnumeric <- c(4:11, 16, 18:19, 50:232) # direct calls to column number vs. name\nrise[,numeric] <- data.frame(apply(rise[numeric], 2, as.numeric))\nstr(rise) # check again and make sure everything looks correct\n",
+    "created" : 1432060276807.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1962093459",
+    "id" : "EE77367C",
+    "lastKnownWriteTime" : 1432062653,
+    "path" : "Y:/Year 3/Year 3 Quantitative Data Analysis/eda-rise/munge.r",
+    "project_path" : "munge.r",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
