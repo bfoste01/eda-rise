@@ -11,7 +11,7 @@ rise[,numeric] <- data.frame(apply(rise[numeric], 2, as.numeric))
 str(rise) # check again and make sure everything looks correct
 # recode missing
 rise[rise=="N/Q"] <- NA 
-# Variable labels
+# Value labels
 rise$PEduc <- factor(rise$PEduc, levels = c(1:7), labels = c("No Formal Schooling", "Some Elementary School",
   "Completed Elementary School", "Some Middle and High School", "Competed High School Diploma or GED",
   "Some College", "Completed 4-Year Degree or Higher"))
