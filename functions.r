@@ -19,3 +19,21 @@ tab2 = function(x, useNA =FALSE) {
   rownames(out) = c(ids,'')
   out
 }
+# numeric summary statistics 
+numsum <- function(var, group, df) {
+  with(df, var, group)
+  z1 <- describe(var)
+  z2 <- describeBy(var, group)
+  z3 <- t.test(var~group)
+  final <- list(z1, z2, z3)
+  return(final)
+}
+# categorical summary statistics
+catsum <- function(var, group, df) {
+  with(df, var, group)
+  z1 <- summary(var)
+  z2 <- prop.table(z1)
+  z3 <- chisq.test(var, group)
+  final <- list(z1, z2, z3)
+  return(final)
+}
