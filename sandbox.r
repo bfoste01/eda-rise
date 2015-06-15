@@ -91,13 +91,11 @@ describeBy(rise$LENSFall, rise$RISEclas)
 t.test(rise$LENSFall~rise$RISEclas)
 
 numsum <- function(var, group, df) {
-  x <- with(df, var)
-  y <- with(df, group)
+  with(df, var, group)
   z1 <- describe(var)
   z2 <- describeBy(var, group)
   z3 <- t.test(var~group)
-  final <- list(z1, z2, z3)
-  return(final)
+  return(data.frame(z1))
 }
 numsum(var = LENSFall, group = RISEclas, df = rise)
 data.frame(test)
@@ -117,3 +115,7 @@ test<-summary(rise$RISEclas)
 prop.table(test)
 chisq.test(rise$CGender, rise$RISEclas)
 
+a <- c(1,4,5,6,7,9)
+b <- c(0,1,0,1,0,1)
+b <- factor(b, levels = c(0:1), labels = c("Control", "Treatment"))
+df <- rbind(a,b)

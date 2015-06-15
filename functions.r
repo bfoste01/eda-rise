@@ -1,5 +1,6 @@
 # the following script contains any functions made critical for stream lining the analytic process
 #   Note. This script needs to be run before any other scripts. 
+## @knitr functions
 tab2 = function(x, useNA =FALSE) {
   if(!useNA) if(any(is.na(x))) x = na.omit(x)
   n = length(x)
@@ -37,3 +38,14 @@ catsum <- function(var, group, df) {
   final <- list(z1, z2, z3)
   return(final)
 }
+lowerCN2 <- function(x) {
+  colnames(x) <- tolower(colnames(x))
+  x
+}
+
+tables<- function(varA, varB, cap){
+a <- table(varA, varB)
+b <- prop.table(a)
+aa <- pandoc.table(a, caption=cap)
+}
+
